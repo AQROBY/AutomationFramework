@@ -37,6 +37,4 @@ public class AlertMethods {
         fourthAlert.sendKeys(value);
         fourthAlert.accept();
     }
-
-    //hello
 }
