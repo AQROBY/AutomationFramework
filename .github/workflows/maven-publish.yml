@@ -4,9 +4,12 @@
 name: Maven Package
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Choose browser: chrome, edge'
+        required: true
+        default: 'chrome'
 
 jobs:
   build:
