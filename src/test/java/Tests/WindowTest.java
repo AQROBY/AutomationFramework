@@ -3,11 +3,11 @@ package Tests;
 import Pages.AlertWindowFramePage;
 import Pages.HomePage;
 import Pages.WindowPage;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class WindowTest extends SharedData {
+public class WindowTest extends Hooks {
 
     @Test
     public void windowMethod(){

@@ -1,5 +1,6 @@
 package Pages;
 
+import LoggerUtility.LoggerUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,16 +18,30 @@ public class WindowPage extends BasePage{
 
     public void interactWithTabBrowser(){
         elementMethods.clickElement(newTabButton);
+        LoggerUtility.infoTest("The user clicks on new tab button.");
+
         windowMethods.switchSpecificTabWindow(1);
+        LoggerUtility.infoTest("The user switches to a different tab window(index 1).");
+
         windowMethods.closeCurrentTabWindow();
+        LoggerUtility.infoTest("The user closes current tab window.");
+
         windowMethods.switchSpecificTabWindow(0);
+        LoggerUtility.infoTest("The user switches to a different tab window(index 0).");
     }
 
     public void interactNewWindow(){
         elementMethods.clickElement(newWindowButton);
+        LoggerUtility.infoTest("The user clicks on new window button.");
+
         windowMethods.switchSpecificTabWindow(1);
+        LoggerUtility.infoTest("The user switches to a different window(index 1).");
+
         windowMethods.closeCurrentTabWindow();
+        LoggerUtility.infoTest("The user closes current window.");
+
         windowMethods.switchSpecificTabWindow(0);
+        LoggerUtility.infoTest("The user switches to a different window(index 0).");
     }
 
 }

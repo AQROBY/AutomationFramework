@@ -5,11 +5,11 @@ import Pages.AlertPage;
 import Pages.AlertWindowFramePage;
 import Pages.HomePage;
 import PropertyUtility.PropertyUtility;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class AlertTest extends SharedData {
+public class AlertTest extends Hooks {
 
     @Test
     public void frameMethod() {
